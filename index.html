@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wave</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body class="body-layout">
+
+    <nav class="navigation">
+        <h1>Wave component library</h1>
+    </nav>
+
+    <div class="sidebar">
+        <ul>
+            <li>Avatar</li>
+            <li>Alert</li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <!-- Avatar -->
+        <div id="avatar">
+            <h2>Avatar</h2>
+            <p>The avatar represents a user, and displays the profile picture, initials or fallback icon. It comes in three sizes, small, medium, large</p>
+            <h3>Usage and examples</h3>
+            <p>Just use the img tag with the appropriate class</p>
+            <h4>Small Avatar</h4>
+            <pre>
+                <code>
+                    &ltimg src="https://bit.ly/dan-abramov" alt="avatar" class="avatar-small"&gt
+                </code>
+            </pre>
+            <img src="https://bit.ly/dan-abramov" alt="avatar" class="avatar-small">
+
+            <h4>Medium Avatar</h4>
+            <pre>
+                <code>
+                    &ltimg src="https://bit.ly/dan-abramov" alt="avatar" class="avatar-medium"&gt
+                </code>
+            </pre>
+            <img src="https://bit.ly/dan-abramov" alt="avatar" class="avatar-medium">
+
+            <h4>Large Avatar</h4>
+            <pre>
+                <code>
+                    &ltimg src="https://bit.ly/dan-abramov" alt="avatar" class="avatar-large"&gt
+                </code>
+            </pre>
+            <img src="https://bit.ly/dan-abramov" alt="avatar" class="avatar-large">
+        </div>
+
+        <!-- Alert -->
+
+        <div id="alert">
+            <h2>Alert</h2>
+            <p>Alerts provide feedback messages for user actions</p>
+            <h3>Usage and examples</h3>
+            <p>Use the div tag with the approprate alert class. There are 5 types of alert classes available - primary, success, danger, warning, and info </p>
+
+            <!-- primary alert -->
+            <h4>Primary Alert</h4>
+            <pre>
+                <code>
+                    &lt div class="alert alert-primary"&gt
+                    &ltspan class="alert-close" onclick="this.parentElement.style.display='none';"&gt&times;&lt/span&gt 
+                    A simple primary alert—check it out!
+                    &lt/div &gt 
+                </code>
+            </pre>
+            <div class="alert alert-primary">
+                <span class="alert-close" onclick="this.parentElement.style.display='none';">&times;</span> A simple primary alert—check it out!
+            </div>
+
+            <!-- secondary alert -->
+
+            <h4>Success Alert</h4>
+            <pre>
+                <code>
+                    &lt div class="alert alert-success"&gt
+                    &ltspan class="alert-close" onclick="this.parentElement.style.display='none';"&gt&times;&lt/span&gt 
+                    A simple success alert—check it out!
+                    &lt/div &gt 
+                </code>
+            </pre>
+            <div class="alert alert-success">
+                <span class="alert-close" onclick="this.parentElement.style.display='none';">&times;</span> A simple success alert—check it out!
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
