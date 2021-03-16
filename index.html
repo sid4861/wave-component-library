@@ -24,7 +24,7 @@
 
     <div class="content">
         <!-- Avatar -->
-        <div id="avatar">
+        <div id="avatar" style="margin-top: 2rem;">
             <h2>Avatar</h2>
             <p>The avatar represents a user, and displays the profile picture, initials or fallback icon. It comes in three sizes, small, medium, large</p>
             <h3>Usage and examples</h3>
@@ -56,11 +56,11 @@
 
         <!-- Alert -->
 
-        <div id="alert">
+        <div id="alert" style="margin-top: 4rem;">
             <h2>Alert</h2>
             <p>Alerts provide feedback messages for user actions</p>
             <h3>Usage and examples</h3>
-            <p>Use the div tag with the approprate alert class. There are 5 types of alert classes available - primary, success, danger, warning, and info </p>
+            <p>Use the div tag with the approprate alert class. There are 5 types of alert classes available - primary, success, error, warning, and info </p>
 
             <!-- primary alert -->
             <h4>Primary Alert</h4>
@@ -76,7 +76,7 @@
                 <span class="alert-close" onclick="this.parentElement.style.display='none';">&times;</span> A simple primary alert—check it out!
             </div>
 
-            <!-- secondary alert -->
+            <!-- success alert -->
 
             <h4>Success Alert</h4>
             <pre>
@@ -91,7 +91,130 @@
                 <span class="alert-close" onclick="this.parentElement.style.display='none';">&times;</span> A simple success alert—check it out!
             </div>
 
+            <!-- error alert -->
+
+            <h4>Error Alert</h4>
+            <pre>
+                <code>
+                    &lt div class="alert alert-error"&gt
+                    &ltspan class="alert-close" onclick="this.parentElement.style.display='none';"&gt&times;&lt/span&gt 
+                    A simple error alert—check it out!
+                    &lt/div &gt 
+                </code>
+            </pre>
+            <div class="alert alert-error">
+                <span class="alert-close" onclick="this.parentElement.style.display='none';">&times;</span> A simple error alert—check it out!
+            </div>
+
+            <!-- warning alert -->
+
+            <h4>Warning Alert</h4>
+            <pre>
+                <code>
+                    &lt div class="alert alert-warning"&gt
+                    &ltspan class="alert-close" onclick="this.parentElement.style.display='none';"&gt&times;&lt/span&gt 
+                    A simple warning alert—check it out!
+                    &lt/div &gt 
+                </code>
+            </pre>
+            <div class="alert alert-warning">
+                <span class="alert-close" onclick="this.parentElement.style.display='none';">&times;</span> A simple warning alert—check it out!
+            </div>
+
+            <!-- info alert -->
+            <h4>Info Alert</h4>
+            <pre>
+                <code>
+                    &lt div class="alert alert-info"&gt
+                    &ltspan class="alert-close" onclick="this.parentElement.style.display='none';"&gt&times;&lt/span&gt 
+                    A simple info alert—check it out!
+                    &lt/div &gt 
+                </code>
+            </pre>
+            <div class="alert alert-info">
+                <span class="alert-close" onclick="this.parentElement.style.display='none';">&times;</span> A simple info alert—check it out!
+            </div>
+
         </div>
+
+        <!-- badge -->
+        <div id="badge" style="margin-top: 4rem;">
+            <h2>Badge</h2>
+            <p>Badges are used to highlight an item's status for quick recognition.</p>
+            <h3>Usage and examples</h3>
+            <p>Use the span tag with appropriate badge class
+            </p>
+            <pre>
+                <code>
+                    &ltspan class="badge badge-primary"&gtPrimary&lt/span&gt
+                    &ltspan class="badge badge-success"&gtPrimary&lt/span&gt
+                    &ltspan class="badge badge-error"&gtPrimary&lt/span&gt
+                    &ltspan class="badge badge-warning"&gtPrimary&lt/span&gt
+                    &ltspan class="badge badge-info"&gtPrimary&lt/span&gt
+                </code>
+            </pre>
+
+
+            <span class="badge badge-primary">
+                Primary
+            </span>
+            <span class="badge badge-success">
+                Success
+            </span>
+            <span class="badge badge-error">
+                error
+            </span>
+            <span class="badge badge-warning">
+                warning
+            </span>
+            <span class="badge badge-info">
+                info
+            </span>
+
+        </div>
+        <!-- badge end -->
+
+        <!-- button -->
+        <div id="button" style="margin-top: 4rem;">
+            <h2>Button</h2>
+            <p>Wave UI 4 offers types of buttons - Primary, Link, Icon, Floating Action Button</p>
+            <h3>Usage and examples</h3>
+            <p>You the button tag with appropriate class</p>
+
+            <!-- primary button -->
+            <h4>Primary Button</h4>
+            <p>Use can use color classes of warning, info, success and error as well</p>
+            <pre>
+                <code>
+                    &ltbutton class="button button-primary"&gtPrimary&lt/button&gt
+                    
+                    &ltbutton class="button button-warning"&gtWarning&lt/button&gt
+                </code>
+            </pre>
+            <button class="button button-primary">Primary</button>
+            <button class="button button-warning">Warning</button>
+            <button class="button button-success">Success</button>
+            <button class="button button-error">Error</button>
+            <button class="button button-info">Info</button>
+
+            <!-- link button -->
+            <h4>Link Button</h4>
+            <p>You can use color classes of warning, info, success and error as well</p>
+            <pre>
+                 <code>
+                     &ltbutton class="button button-link-primary"&gtPrimary&lt/button&gt
+                     
+                     &ltbutton class="button button-link-warning"&gtWarning&lt/button&gt
+                 </code>
+             </pre>
+            <button class="button button-link-primary">Primary</button>
+            <button class="button button-link-warning">Warning</button>
+            <button class="button button-link-success">Success</button>
+            <button class="button button-link-error">Error</button>
+            <button class="button button-link-info">Info</button>
+
+        </div>
+        <!-- button end -->
     </div>
 </body>
 
